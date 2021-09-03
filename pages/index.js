@@ -62,6 +62,11 @@ export default function Home({ val }) {
   );
 }
 
+export const getStaticPaths = async () => ({
+  paths: [],
+  fallback: 'blocking'
+});
+
 let n = 0;
 
 export const getStaticProps = async () => {
