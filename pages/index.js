@@ -73,9 +73,9 @@ export const getStaticProps = async () => {
   console.log(val);
   return {
     props: {
-      val
+      val,
+      fallback: true
     },
-    revalidate: 5,
-    fallback: true
+    revalidate: 5
   };
 };
